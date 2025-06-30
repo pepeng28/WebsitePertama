@@ -12,7 +12,8 @@ header {
   width: 100%;
   /* mengukur supaya kotak bisa di atur sesuka nya ukuran nya */
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../../img/22e.jpeg);
   /* untuk background besar se layar */
   background-size: cover;
@@ -90,7 +91,7 @@ header {
   color: #f1c40f;
 }
 
-.navigation .box-navigation .box:nth-child(3){
+.navigation .box-navigation .box:nth-child(3) {
   display: none;
 }
 
@@ -329,14 +330,13 @@ footer p {
     -o-transition: all 0.3s ease;
     pointer-events: none;
     z-index: 1;
-    
   }
 
   .navigation .box-navigation .menu-navigation.menu-active {
     opacity: 1;
     top: 80px;
     pointer-events: auto;
-        /* supaya berada di paling atas */
+    /* supaya berada di paling atas */
     z-index: 1;
   }
 
@@ -356,7 +356,7 @@ footer p {
     align-items: center;
     margin-left: -24px;
   }
-  
+
   .navigation .box-navigation .box:nth-child(2) ul li i {
     display: block;
     font-size: 24px;
@@ -495,7 +495,7 @@ footer p {
     padding-top: 140px;
     padding-bottom: 150px;
   }
-    .about .box-about .box {
+  .about .box-about .box {
     margin-bottom: -20px;
   }
   .about .box-about .box:nth-child(1) p {
@@ -513,7 +513,6 @@ footer p {
   .gallery .box-gallery img {
     margin: 10px;
   }
-  
 }
 
 @media screen and (max-width: 475px) {
