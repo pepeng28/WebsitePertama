@@ -4,7 +4,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Playwrite DE Grund', 'Segoe UI', Arial, sans-serif;
+    font-family: "Playwrite DE Grund", "Segoe UI", Arial, sans-serif;
     width: 100%;
 }
 
@@ -59,6 +59,7 @@ header {
     font-size: 48px;
     color: #f1c40f;
     line-height: 0;
+     transform: rotate(2deg);
 }
 
 .navigation .box-navigation .box:nth-child(2) ul {
@@ -92,6 +93,8 @@ header {
 
 .navigation .box-navigation .box:nth-child(3) {
     display: none;
+    /* Copy code to element you want to animate */
+    animation: customAni 2s ease 0s infinite normal none;
 }
 
 /* hero style */
@@ -271,11 +274,12 @@ footer p {
     color: #bdc3c7;
 }
 
-
-.atas {
+.kotak-tombol {
     position: fixed;
     bottom: 60px;
     right: 100px;
+    /* Copy code to element you want to animate */
+    animation: customAni 2s ease 0s infinite normal none;
 }
 
 .tombol {
@@ -294,6 +298,37 @@ footer p {
     /* untuk menghilangkan garis di link */
     text-decoration: none;
     color: black;
+}
+
+/* Copy this code after the above code */
+@keyframes customAni {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
 }
 
 @media screen and (max-width: 1360px) {
@@ -471,10 +506,17 @@ footer p {
         margin: 20px;
     }
 
-    .atas {
+    .kotak-tombol {
         position: fixed;
         bottom: 40px;
         right: 40px;
+        
+    }
+    .tombol {
+      width: 40px;
+    height: 40px;
+    font-size: 20px;
+    box-shadow: 0px 0px 4px -1px rgba(0, 0, 0, 1);
     }
 }
 
