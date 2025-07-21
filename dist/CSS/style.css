@@ -1,27 +1,26 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: "Playwrite DE Grund", cursive;
-  width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Playwrite DE Grund", cursive;
+    width: 100%;
 }
 
 header {
-  width: 100%;
-  /* mengukur supaya kotak bisa di atur sesuka nya ukuran nya */
-  height: 100vh;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../img/22e.jpeg);
-  /* untuk background besar se layar */
-  background-size: cover;
-  /* untuk background keketengah */
-  background-position: center;
-  /* untuk background tidak di ulang */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    width: 100%;
+    /* mengukur supaya kotak bisa di atur sesuka nya ukuran nya */
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../../img/22e.jpeg);
+    /* untuk background besar se layar */
+    background-size: cover;
+    /* untuk background keketengah */
+    background-position: center;
+    /* untuk background tidak di ulang */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 /* 1. Midnight Blue (#2c3e50) - Memberikan kesan ketenangan dan    kecerdasan.
 
@@ -35,528 +34,560 @@ header {
    4. Silver Gray (#bdc3c7) - Memberikan nuansa teknologi dan kesederhanaan futuristik. */
 
 .navigation {
-  width: 100%;
+    width: 100%;
 }
 
 .container {
-  width: 85%;
-  /* memusatkan div hanya horizontal lebar (width) yg sudah ditentukan*/
-  /* margin-inline: auto; */
-  margin-right: auto;
-  margin-left: auto;
+    width: 85%;
+    /* memusatkan div hanya horizontal lebar (width) yg sudah ditentukan*/
+    /* margin-inline: auto; */
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .navigation .box-navigation {
-  /* ketika ingin menggunakan flex dengan space-between harus di satu langkah box navigation nya bukan di atas navigation nya */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* untuk menaruh ke tengah semua urutan */
-  align-items: center;
-  padding: 5px 0px 20px 5px;
+    /* ketika ingin menggunakan flex dengan space-between harus di satu langkah box navigation nya bukan di atas navigation nya */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* untuk menaruh ke tengah semua urutan */
+    align-items: center;
+    padding: 5px 0px 20px 5px;
 }
 
 .navigation .box-navigation .box:nth-child(1) h1 {
-  font-size: 48px;
-  color: #f1c40f;
-  line-height: 0;
+    font-size: 48px;
+    color: #f1c40f;
+    line-height: 0;
 }
 
 .navigation .box-navigation .box:nth-child(2) ul {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .navigation .box-navigation .box:nth-child(2) ul li {
-  /* untuk menghilangkan titik */
-  list-style-type: none;
-  /* jarak untuk text */
-  margin-left: 50px;
+    /* untuk menghilangkan titik */
+    list-style-type: none;
+    /* jarak untuk text */
+    margin-left: 50px;
 }
 
 .navigation .box-navigation .box:nth-child(2) ul li i {
-  display: none;
-  color: black;
+    display: none;
+    color: black;
 }
 
 .navigation .box-navigation .box:nth-child(2) ul li a {
-  font-size: 20px;
-  /* untuk menghilangkan garis di link */
-  text-decoration: none;
-  color: white;
+    font-size: 20px;
+    /* untuk menghilangkan garis di link */
+    text-decoration: none;
+    color: white;
 }
 
 /* hover untuk mengubah tombol yg di tekan */
 .navigation .box-navigation .box:nth-child(2) ul li a:hover {
-  color: #f1c40f;
+    color: #f1c40f;
 }
 
 .navigation .box-navigation .box:nth-child(3) {
-  display: none;
+    display: none;
 }
 
 /* hero style */
 header .hero {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  -webkit-transform: translate(50%, -50%);
-  -moz-transform: translate(50%, -50%);
-  -ms-transform: translate(50%, -50%);
-  -o-transform: translate(50%, -50%);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
 }
 
 header .hero h1 {
-  color: #ffffff6c;
-  font-size: 50px;
-  text-align: center;
-  line-height: 2.5;
+    color: #ffffff6c;
+    font-size: 50px;
+    text-align: center;
+    line-height: 2.5;
 }
 
 /* about style */
 .about {
-  background-color: #2c3e50;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
+    background-color: #2c3e50;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .about .box-about {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .about .box-about .box:nth-child(1) {
-  padding-right: 30px;
+    padding-right: 30px;
 }
 
 .about .box-about .box:nth-child(1) h1 {
-  color: #f1c40f;
-  font-size: 60px;
-  line-height: 1.5;
+    color: #f1c40f;
+    font-size: 60px;
+    line-height: 1.5;
 }
 
 .about .box-about .box:nth-child(1) p {
-  color: #bdc3c7;
-  font-size: 35px;
-  line-height: 2.4;
+    color: #bdc3c7;
+    font-size: 35px;
+    line-height: 2.4;
 }
 
 .about .box-about .box:nth-child(2) img {
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  width: 400px;
-  height: auto;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    width: 400px;
+    height: auto;
 }
 /*famous style*/
 .famous {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background-color: #3498db;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #3498db;
 }
 .famous .box-famous {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start; /* supaya ikut yg awal */
-  padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* supaya ikut yg awal */
+    padding-top: 50px;
 }
 .famous .box-famous .box {
-  text-align: center;
-  flex: 1;
-  margin: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
 }
 
 .famous .box-famous .box img {
-  width: 400px; /* Gambar akan mengisi lebar box */
-  height: 300px; /* Tinggi seragam untuk semua gambar */
-  object-fit: cover; /* Memastikan gambar tetap proporsional dan mengisi ruang */
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+    width: 400px; /* Gambar akan mengisi lebar box */
+    height: 300px; /* Tinggi seragam untuk semua gambar */
+    object-fit: cover; /* Memastikan gambar tetap proporsional dan mengisi ruang */
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 .famous .box-famous .box h1 {
-  color: black;
+    color: black;
 }
 .famous .box-famous .box p {
-  color: white;
-  text-align: center;
-  box-sizing: border-box;
-  overflow: hidden; /* Memotong teks jika lebih panjang dari kotak */
-  padding: 0 50px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden; /* Memotong teks jika lebih panjang dari kotak */
+    padding: 0 50px;
 }
 
 /* gallery style */
 .gallery {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background-color: #2c3e50;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #2c3e50;
 }
 .gallery .box-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery .box-gallery img {
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  width: 370px;
-  height: 268px;
-  object-fit: cover;
-  margin: 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 370px;
+    height: 268px;
+    object-fit: cover;
+    margin: 30px;
 }
 /* style contact */
 .contact {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #3498db;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3498db;
 }
 .contact .box-contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 .contact .box-contact h1 {
-  font-size: 50px;
-  font-weight: bold;
-  color: white;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
 }
 .contact .box-contact from table tr {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 .contact .box-contact from table tr td {
-  font-size: 18px;
-  color: white;
+    font-size: 18px;
+    color: white;
 }
 .contact .box-contact from table tr td input {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding: 15px 140px 15px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px 140px 15px 20px;
 }
 
 .contact .box-contact from table tr td textarea {
-  margin-top: 10px;
-  padding: 15px 200px 200px 20px;
+    margin-top: 10px;
+    padding: 15px 200px 200px 20px;
 }
 /* style footer */
 footer {
-  background-color: #2c3e50;
-  padding: 10px 0 10px 0;
+    background-color: #2c3e50;
+    padding: 10px 0 10px 0;
 }
 footer p {
-  font-size: 12px;
-  text-align: center;
-  color: #bdc3c7;
+    font-size: 12px;
+    text-align: center;
+    color: #bdc3c7;
 }
-@media screen and (max-width: 1360px) {
-  .about .box-about .box:nth-child(1) h1 {
-    font-size: 40px;
-  }
 
-  .about .box-about .box:nth-child(1) p {
-    font-size: 25px;
-  }
+
+.atas {
+    position: fixed;
+    bottom: 60px;
+    right: 100px;
+}
+
+.tombol {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    background-color: #eee;
+    border-radius: 10px;
+    margin: 5px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* untuk menghilangkan garis di link */
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 1360px) {
+    .about .box-about .box:nth-child(1) h1 {
+        font-size: 40px;
+    }
+
+    .about .box-about .box:nth-child(1) p {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 1500px) {
-  /* untuk nexsus */
-  .about .box-about .box:nth-child(2) img {
-    width: 470px;
-  }
-  .famous .box-famous .box img {
-    width: 360px;
-    height: 290px;
-  }
-  .gallery {
-    height: 100%;
-    padding: 50px 0 50px 0;
-  }
-  .gallery .box-gallery img {
-    margin: 18px;
-  }
+    /* untuk nexsus */
+    .about .box-about .box:nth-child(2) img {
+        width: 470px;
+    }
+    .famous .box-famous .box img {
+        width: 360px;
+        height: 290px;
+    }
+    .gallery {
+        height: 100%;
+        padding: 50px 0 50px 0;
+    }
+    .gallery .box-gallery img {
+        margin: 18px;
+    }
 }
 @media screen and (max-width: 1350px) {
-  /* firafox */
-  .famous .box-famous .box img {
-    width: 270px;
-    height: 200px;
-  }
+    /* firafox */
+    .famous .box-famous .box img {
+        width: 270px;
+        height: 200px;
+    }
 }
 @media screen and (max-width: 990px) {
-  .navigation .box-navigation .box:nth-child(2) {
-    display: flex;
-    /* ketika telah menambahkan position absolute mmaka akan menambahkan fungsion yg baru ya itu top right bottom left */
-    position: absolute;
-    /* ke bawah */
-    top: 38px;
-    /* ke kiri */
-    right: 38px;
-    background-color: #3498db;
-    /* untuk ukuran kotak background */
-    width: 200px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    opacity: 0;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    pointer-events: none;
-    z-index: 1;
-  }
+    .navigation .box-navigation .box:nth-child(2) {
+        display: flex;
+        /* ketika telah menambahkan position absolute mmaka akan menambahkan fungsion yg baru ya itu top right bottom left */
+        position: absolute;
+        /* ke bawah */
+        top: 38px;
+        /* ke kiri */
+        right: 38px;
+        background-color: #3498db;
+        /* untuk ukuran kotak background */
+        width: 200px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        opacity: 0;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        pointer-events: none;
+        z-index: 1;
+    }
 
-  .navigation .box-navigation .menu-navigation.menu-active {
-    opacity: 1;
-    top: 80px;
-    pointer-events: auto;
-    /* supaya berada di paling atas */
-    z-index: 1;
-  }
+    .navigation .box-navigation .menu-navigation.menu-active {
+        opacity: 1;
+        top: 80px;
+        pointer-events: auto;
+        /* supaya berada di paling atas */
+        z-index: 1;
+    }
 
-  .navigation .box-navigation .box:nth-child(2) ul {
-    /* agar text font nya menjadi column harus di ul biar active */
-    flex-direction: column;
-  }
+    .navigation .box-navigation .box:nth-child(2) ul {
+        /* agar text font nya menjadi column harus di ul biar active */
+        flex-direction: column;
+    }
 
-  .navigation .box-navigation .box:nth-child(1) h1 {
-    font-size: 42px;
-  }
+    .navigation .box-navigation .box:nth-child(1) h1 {
+        font-size: 42px;
+    }
 
-  .navigation .box-navigation .box:nth-child(2) ul li {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    margin-left: -24px;
-  }
+    .navigation .box-navigation .box:nth-child(2) ul li {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        margin-left: -24px;
+    }
 
-  .navigation .box-navigation .box:nth-child(2) ul li i {
-    display: block;
-    font-size: 24px;
-    margin-right: 10px;
-  }
+    .navigation .box-navigation .box:nth-child(2) ul li i {
+        display: block;
+        font-size: 24px;
+        margin-right: 10px;
+    }
 
-  .navigation .box-navigation .box:nth-child(2) ul li a {
-    color: white;
-  }
+    .navigation .box-navigation .box:nth-child(2) ul li a {
+        color: white;
+    }
 
-  /*   .navigation .box-navigation .box:nth-child(3) {
+    /*   .navigation .box-navigation .box:nth-child(3) {
     display: inline-block;
     font-size: 38px;
   } */
 
-  .navigation .box-navigation .box:nth-child(3) {
-    display: inline-block;
-    font-size: 40px;
-    /* border: 2px dashed white; */ /* border titik-titik */
-    padding: 0 13px 0 13px;
-  }
+    .navigation .box-navigation .box:nth-child(3) {
+        display: inline-block;
+        font-size: 40px;
+        /* border: 2px dashed white; */ /* border titik-titik */
+        padding: 0 13px 0 13px;
+    }
 
-  header .hero h1 {
-    font-size: 38px;
-  }
-  .about {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .about .box-about {
-    flex-direction: column-reverse;
-  }
+    header .hero h1 {
+        font-size: 38px;
+    }
+    .about {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .about .box-about {
+        flex-direction: column-reverse;
+    }
 
-  .about .box-about .box:nth-child(1) {
-    text-align: center;
-    margin-top: 10px;
-    padding-right: 0;
-  }
-  .about .box-about .box:nth-child(1) h1 {
-    font-size: 30px;
-  }
+    .about .box-about .box:nth-child(1) {
+        text-align: center;
+        margin-top: 10px;
+        padding-right: 0;
+    }
+    .about .box-about .box:nth-child(1) h1 {
+        font-size: 30px;
+    }
 
-  .about .box-about .box:nth-child(1) p {
-    font-size: 15px;
-    padding: 0px 40px 0px 40px;
-  }
+    .about .box-about .box:nth-child(1) p {
+        font-size: 15px;
+        padding: 0px 40px 0px 40px;
+    }
 
-  .about .box-about .box:nth-child(2) img {
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-  }
-  .famous {
-    width: 100%;
-    padding-top: 300px;
-    padding-bottom: 340px;
-  }
+    .about .box-about .box:nth-child(2) img {
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .famous {
+        width: 100%;
+        padding-top: 300px;
+        padding-bottom: 340px;
+    }
 
-  .famous .box-famous {
-    flex-direction: column;
-    align-items: center;
-  }
+    .famous .box-famous {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .famous .box-famous .box {
-    margin-bottom: 20px;
-  }
+    .famous .box-famous .box {
+        margin-bottom: 20px;
+    }
 
-  .famous .box-famous .box img {
-    width: 280px;
-    height: 210px;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-  }
-  .gallery {
-    height: 100%;
-    padding: 40px 0 60px 0;
-  }
-  .gallery .box-gallery img {
-    width: 320px;
-    height: 280px;
-    object-fit: cover;
-    margin: 20px;
-  }
+    .famous .box-famous .box img {
+        width: 280px;
+        height: 210px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .gallery {
+        height: 100%;
+        padding: 40px 0 60px 0;
+    }
+    .gallery .box-gallery img {
+        width: 320px;
+        height: 280px;
+        object-fit: cover;
+        margin: 20px;
+    }
+
+    .atas {
+        position: fixed;
+        bottom: 26px;
+        right: 26px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  header .hero h1 {
-    font-size: 25px;
-  }
-  .contact {
-    height: 100%;
-    padding: 0 0 130px 0;
-  }
-  .contact .box-contact {
-    flex-direction: column;
-  }
+    header .hero h1 {
+        font-size: 25px;
+    }
+    .contact {
+        height: 100%;
+        padding: 0 0 130px 0;
+    }
+    .contact .box-contact {
+        flex-direction: column;
+    }
 
-  .contact .box-contact h1 {
-    margin-bottom: 40px;
-  }
+    .contact .box-contact h1 {
+        margin-bottom: 40px;
+    }
 }
 
 @media screen and (max-width: 575px) {
-  .about .box-about .box:nth-child(2) img {
-    width: 280px;
-  }
+    .about .box-about .box:nth-child(2) img {
+        width: 280px;
+    }
 
-  .famous .box-famous .box img {
-    width: 280px;
-    height: 210px;
-  }
-  .famous .box-famous .box h1 {
-    font-size: 18px;
-  }
-  .famous .box-famous .box p {
-    font-size: 15px;
-  }
-  .contact .box-contact from table tr td input {
-    padding: 15px 90.7px 15px 20px;
-  }
-  .contact .box-contact from table tr td textarea {
-    padding: 15px 150px 150px 20px;
-  }
+    .famous .box-famous .box img {
+        width: 280px;
+        height: 210px;
+    }
+    .famous .box-famous .box h1 {
+        font-size: 18px;
+    }
+    .famous .box-famous .box p {
+        font-size: 15px;
+    }
+    .contact .box-contact from table tr td input {
+        padding: 15px 90.7px 15px 20px;
+    }
+    .contact .box-contact from table tr td textarea {
+        padding: 15px 150px 150px 20px;
+    }
 }
 @media screen and (max-width: 575px) and (max-height: 400px) {
-  /* CSS khusus untuk ponsel OPPO dengan panjang layar hingga 1600px setengah layar */
-  header .hero h1 {
-    line-height: 1.5;
-  }
-  .about {
-    padding-top: 140px;
-    padding-bottom: 150px;
-  }
-  .about .box-about .box {
-    margin-bottom: -20px;
-  }
-  .about .box-about .box:nth-child(1) p {
-    line-height: 1.5;
-  }
+    /* CSS khusus untuk ponsel OPPO dengan panjang layar hingga 1600px setengah layar */
+    header .hero h1 {
+        line-height: 1.5;
+    }
+    .about {
+        padding-top: 140px;
+        padding-bottom: 150px;
+    }
+    .about .box-about .box {
+        margin-bottom: -20px;
+    }
+    .about .box-about .box:nth-child(1) p {
+        line-height: 1.5;
+    }
 
-  .famous {
-    padding-top: 450px;
-    padding-bottom: 460px;
-  }
-  .gallery {
-    height: 100%;
-    padding: 20px 0 40px 0;
-  }
-  .gallery .box-gallery img {
-    margin: 10px;
-  }
+    .famous {
+        padding-top: 450px;
+        padding-bottom: 460px;
+    }
+    .gallery {
+        height: 100%;
+        padding: 20px 0 40px 0;
+    }
+    .gallery .box-gallery img {
+        margin: 10px;
+    }
 }
 
 @media screen and (max-width: 475px) {
-  header .hero h1 {
-    font-size: 21px;
-  }
+    header .hero h1 {
+        font-size: 21px;
+    }
 
-  .about .box-about .box:nth-child(2) img {
-    width: 280px;
-  }
+    .about .box-about .box:nth-child(2) img {
+        width: 280px;
+    }
 
-  .about .box-about .box:nth-child(1) h1 {
-    font-size: 20px;
-  }
+    .about .box-about .box:nth-child(1) h1 {
+        font-size: 20px;
+    }
 
-  .about .box-about .box:nth-child(1) p {
-    font-size: 15px;
-    padding: 0px 40px 0px 40px;
-  }
+    .about .box-about .box:nth-child(1) p {
+        font-size: 15px;
+        padding: 0px 40px 0px 40px;
+    }
 }
 
 @media screen and (max-width: 428px) and (max-height: 844px) {
-  /* iPhone 5 */
-  .about .box-about .box:nth-child(2) img {
-    width: 200px;
-  }
-  .famous {
-    width: 100%;
-    height: 70vh;
-  }
-  .famous .box-famous .box img {
-    width: 240px;
-    height: 170px;
-  }
-  .gallery .box-gallery img {
-    width: 230px;
-    height: 220px;
-    object-fit: cover;
-    margin: 20px;
-  }
-  .contact .box-contact from table tr td input {
-    padding: 15px 44.7px 15px 20px;
-  }
-  .contact .box-contact from table tr td textarea {
-    padding: 15px 100px 100px 20px;
-  }
+    /* iPhone 5 */
+    .about .box-about .box:nth-child(2) img {
+        width: 200px;
+    }
+    .famous {
+        width: 100%;
+        height: 70vh;
+    }
+    .famous .box-famous .box img {
+        width: 240px;
+        height: 170px;
+    }
+    .gallery .box-gallery img {
+        width: 230px;
+        height: 220px;
+        object-fit: cover;
+        margin: 20px;
+    }
+    .contact .box-contact from table tr td input {
+        padding: 15px 44.7px 15px 20px;
+    }
+    .contact .box-contact from table tr td textarea {
+        padding: 15px 100px 100px 20px;
+    }
 }
